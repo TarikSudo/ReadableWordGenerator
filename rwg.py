@@ -20,10 +20,10 @@ def generate_readable_words(length=4): # Set the length
 
     return readable_words
 
-four_letter_words = generate_readable_words(4)
+four_letter_words = generate_readable_words()
 
 # Save generated words to a CSV file
-file_path = '/readable_words.csv'
+file_path = 'readable_words.csv'
 with open(file_path, 'w') as file:
     for word in four_letter_words:
         file.write(word + '\n')
